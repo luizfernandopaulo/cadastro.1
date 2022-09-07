@@ -129,7 +129,7 @@ header .navbar a{
 .form {
     margin-top: 1.5rem;
 }
-
+/*editando os cabeçalho do nome,E-mail e senha*/
 .form__group {
     margin-bottom: 2rem;
     position: relative;
@@ -150,6 +150,15 @@ header .navbar a{
     position: relative;
     width: 100%;
 }
+
+.form__input-text:hover{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: var(--red);
+    box-shadow: 0 5px  var(--red);
+    color: white;
+}
+/*fim da edição dos cabeçalho do nome,E-mail e senha*/
 
 .form__input-text.error {
     border-color: #D95150;
@@ -193,7 +202,7 @@ header .navbar a{
 .form__link {
     color: #00A9C8;
 }
-
+/*editando o butao Enviar*/
 .form__button-submit {
     background-color: #00A9C8;
     border-radius: 2.5rem;
@@ -206,6 +215,14 @@ header .navbar a{
     width: 15rem;
 }
 
+.form__button-submit:hover{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: var(--red);
+    box-shadow: 0 5px  var(--red);
+    color: white;
+}
+/*fim da edição do butao Enviar*/
 .form__message-error {
     color: #D95150;
     display: none;

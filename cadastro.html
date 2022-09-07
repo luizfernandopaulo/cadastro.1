@@ -1,0 +1,126 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" type="" href="cadastro.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <input type="text" placeholder="Nome:">
+        <input type="text" placeholder="quantidade">
+        <input type="text" placeholder="Preço">
+        <input type="text" placeholder="categoria">
+        <input type="text" placeholder="preteleira">
+        <input type="text" placeholder="Descrição">
+    </div>
+
+    <div id="botoes">
+        <button>cadastro</button>
+        <button>Excluir</button>
+        <button>Editar</button>
+    </div>
+
+    <div id="saida">
+        <table width="100%" height="100%" border="0">
+            <tr></tr>
+        </table>
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/fontes.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="signup">
+            <div class="logo">
+                <a class="logo__link" href="/"></a>
+            </div>
+            <header>
+                
+                <img src="logo-head_-removebg-preview.png">
+                <div id="menu-bar" class="fas fa-bars"></div>
+                <nav class="navbar">
+                    <a class="active" href="#home">Inicio</a>
+               
+                </nav>
+        
+                <div class="icons">
+        
+                    <i class="fas fa-bars" id="menu-bars"></i>
+                    <i class="fas fa-search" id="search-icon"></i>
+        
+                </div>
+            </header>
+           
+            <h1 class="signup__title"><span>log</span>in</h1>
+            <form class="form" data-form>
+                <div class="form__group">
+                    <label class="form__label hide" for="inputName">Nome</label>
+                    <input type="text" name="name" class="form__input-text" id="inputName" placeholder="Nome" required data-input/>
+                    <i class="form__input-icon fas fa-user"></i>
+                    <span class="form__message-error" data-error-message></span>
+                </div>
+                <div class="form__group">
+                    <label class="form__label hide" for="inputEmail">E-mail</label>
+                    <input type="email" name="email" class="form__input-text" id="inputEmail" placeholder="E-mail" required data-input />
+                    <i class="form__input-icon fas fa-envelope"></i>
+                    <span class="form__message-error" data-error-message></span>
+                </div>
+                <div class="form__group">
+                    <label class="form__label hide" for="inputPassword">Senha</label>
+                    <input type="password" name="password" class="form__input-text" id="inputPassword" placeholder="Senha" required data-input />
+                    <i class="form__input-icon fas fa-lock"></i>
+                    <i class="form__input-icon fas fa-eye" data-password-eye></i>
+                    <span class="form__message-error" data-error-message></span>
+                    <div class="requirements">
+                        <div class="requirements__progressbar" data-requirement-progressbar data-percentage="0"></div>
+                        <div class="requirements__description">A senha deverá ter</div>
+                        <ul class="requirements__list">
+                            <li class="requirements__item" data-requirement-item="lowerUpperCase">
+                                <i class="fas"></i>
+                                Pelo menos 1 letra maiúscula e 1 letra minúscula</li>
+                            <li class="requirements__item" data-requirement-item="number">
+                                <i class="fas"></i>
+                                Pelo menos 1 número
+                            </li>
+                            <li class="requirements__item" data-requirement-item="specialCharacter">
+                                <i class="fas"></i>
+                                Pelo menos 1 caracter especial</li>
+                            <li class="requirements__item" data-requirement-item="minCharacter">
+                                <i class="fas"></i>
+                                Pelo menos 8 caracteres
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <input type="checkbox" name="terms" class="form__input-checkbox" id="inputTerms" required data-input/>
+                    <label class="form__label" for="inputTerms">Concordo com os <a class="form__link" href="https://italowillian.github.io/portfolio/">termos</a> e <a class="form__link" href="/">política de privacidade</a></label>
+                    <span class="form__message-error" data-error-message>Campo obrigatório</span>
+                </div>
+                <div class="form__group form__group--center">
+                    <button class="form__button-submit" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./assets/js/show-password.js"></script>
+    <script src="./assets/js/form-validation.js"></script>
+</body>
+</html>

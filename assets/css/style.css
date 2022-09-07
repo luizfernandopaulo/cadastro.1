@@ -307,3 +307,8 @@ header .navbar a{
 .form_link2{
     color: var(--red);
 }
+
+h2{
+    color: white;
+    text-align: center;
+}
